@@ -1,0 +1,37 @@
+{
+    "name": "juniorfontenele/laravel-version",
+    "description": "Package for generating Laravel version based on commit hashes",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Junior Fontenele",
+            "email": "laravel-version@juniorfontenele.com.br"
+        }
+    ],
+    "homepage": "https://github.com/juniorfontenele/laravel-version",
+    "keywords": ["Laravel", "LaravelVersion"],
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "JuniorFontenele\\LaravelVersion\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JuniorFontenele\\LaravelVersion\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JuniorFontenele\\LaravelVersion\\LaravelVersionServiceProvider"
+            ],
+            "aliases": {
+                "LaravelVersion": "JuniorFontenele\\LaravelVersion\\LaravelVersion"
+            }
+        }
+    }
+}
