@@ -7,7 +7,7 @@ class LaravelVersion
     public static function version(): string
     {
         $version = self::readVersion() ?? self::generateVersion();
-        return $version . '-' . env('APP_ENV');
+        return $version . '-' . env('APP_ENV', 'x');
     }
 
     protected static function generateVersion(): string
