@@ -31,7 +31,7 @@ Please see [contributing.md](contributing.md) for details and a todolist.
 
 ## Security
 
-If you discover any security related issues, please email security-laravel-version@juniorfontenele.com.br instead of using the issue tracker.
+If you discover any security related issues, please email security-github@juniorfontenele.com.br instead of using the issue tracker.
 
 ## Credits
 
